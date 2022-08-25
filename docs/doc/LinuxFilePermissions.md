@@ -22,7 +22,7 @@ Every user on the system is part of other.
 Ownership, and permission, is evaluated in the order of `User -> Group -> Other`.
 The permissions and ownership of User take precedence over Group, Group takes precedene over Other.
 
-This means even if group has more power than User, only the permissions of user are evaluated (this is if the user is the owner).
+This means even if group has more power than User, only the permissions of user are evaluated.
 
 ### Changing ownership
 
