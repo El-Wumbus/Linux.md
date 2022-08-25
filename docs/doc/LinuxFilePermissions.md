@@ -1,4 +1,4 @@
-# Linux File Permissions & Ownership
+# Linux File Permissions and Ownership
 
 ## File Ownership
 
