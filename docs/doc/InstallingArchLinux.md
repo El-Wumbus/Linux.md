@@ -17,6 +17,13 @@ This guide assumes a uefi system.
 timedatectl set-ntp true
 ```
 
+### Update Mirrors
+
+```bash
+reflector -a 48 -c $(curl -4 ifconfig.co/country-iso) -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist
+pacman -Sy
+```
+
 ### Partition with [`cfdisk`](https://www.geeksforgeeks.org/cfdisk-command-in-linux-with-examples/)
 
 ```bash
