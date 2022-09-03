@@ -216,14 +216,14 @@ log in as root with either [`su`](https://wiki.archlinux.org/title/su) or by exi
 now install the required packages for a desktop environment, for example kde-plasma.
 
 ``` bash
-pacman -Sy xorg plasma-desktop sddm alacritty firefox
+pacman -Syu xorg plasma-desktop sddm alacritty firefox
 systemctl enable sddm
 ```
 
 You'll want to install video drivers next. If you are running an modern nvidia graphics card then follow the instructions below. Otherwise, go to the [Arch wiki](https://wiki.archlinux.org)and search for your drivers.
 
 ```bash
-sudo pacman -S nvidia nvidia-settings nvidia-utils
+sudo pacman -Syu nvidia nvidia-settings nvidia-utils
 ```
 
 Now on boot you should see a login screen, just log in with the user account you made earlier.
